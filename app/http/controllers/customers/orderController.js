@@ -33,7 +33,7 @@ function orderController() {
                 {
                     sort: { 'createdAt': -1 }
                 });
-                res.header('Cache-Control','no-store');
+            res.header('Cache-Control', 'no-store');
             res.render('customers/orders', {
                 orders: orders,
                 moment: moment,
