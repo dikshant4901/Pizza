@@ -15,7 +15,7 @@ function authController() {
            // Validate request 
             if(!email || !password) {
                 req.flash('error', 'All fields are required')
-                return res.redirect('/login')
+                return res.redirect('/login');
             }
             passport.authenticate('local', (err, user, info) => {
                 if(err) {

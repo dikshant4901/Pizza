@@ -12,7 +12,7 @@ const MongoStore = require("connect-mongo");
 const passport = require("passport");
 
 //DataBase Connection
-const url = "mongodb://localhost/pizza";
+const url = "mongodb://127.0.0.1:27017/pizza";
 mongoose.set("strictQuery", true);
 mongoose.connect(url, {
   useNewUrlParser: true, //This flag allows users to fall back to the old parser if they find a bug in the server
@@ -52,11 +52,11 @@ app.use(
 );
 
 
-  //Passport config
-  const passportInit=require('./app/config/passport');
-  passportInit(passport);
-  app.use(passport.initialize());
-  app.use(passport.session());
+//Passport config
+const passportInit = require('./app/config/passport');
+passportInit(passport);
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use(flash()); //Flash is an extension of connect-flash with the ability to define a flash message and render it without redirecting the request.
 

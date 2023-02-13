@@ -1,21 +1,21 @@
-const Menu=require('../../models/menu')
-function homeController(){
+const Menu = require('../../models/menu')
+function homeController() {
     //factory functions -> bnati hai object
     return {
-        async index(req, res){
+        async index(req, res) {
             const pizzas = await Menu.find();
             // console.log(pizzas)
-            return res.render('home',{pizzas:pizzas})
+            return res.render('home', { pizzas: pizzas })
 
             // Menu.find().then(function(pizzas){
             //     console.log(pizzas);
             //     res.render('home',{pizzas:pizzas});
             // })
-            
+
         }
 
     }
- 
+
 }
 
 module.exports = homeController;
