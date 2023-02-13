@@ -1,0 +1,34 @@
+1. Create Directory Structure
+2.Create a NPM project and install all dependancies
+        --Dependancies
+            --express
+            --ejs express-ejs-layouts
+        --Dev dependancies
+            --nodemon
+3.Create Express server - Create a server.js file
+4.Git setup and first commit
+5.Install Laravel Mix
+    --setup js and scss
+6.Install Tailwind css
+7. Create home page using html and css
+8. create cart page
+     --order Summary section
+     --empty cart section section
+9.Moves routes to routes section
+10.Create dedicated controllers
+11.Add to cart functionality
+    --Fetch all pizzas from db and show on homepage
+    --Create menu model and put dummy Data
+        --connect to mongodb
+        --use connect-mongodb for session store
+            --dependancies
+                --mongoose,express-session,connect-mongo,dotenv
+    --axios to send ajax request
+    --install notification library npm i noty https://ned.im/noty/#/
+12.Create login page with route
+13.Create a register page with route
+14.Build register crud
+    --dependancies express-flash express-session dotenv
+    --status code article
+
+
